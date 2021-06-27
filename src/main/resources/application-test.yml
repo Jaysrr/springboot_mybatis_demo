@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/market?characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:c:/Users/97405/Desktop/superMarket/supermarket/upload_path/
+
+mybatis:
+  type-aliases-package: com.jay.demo.pojo
+  mapper-locations: classpath:dao/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+    port: 82
+
+#自定义用了显示在前段登陆页面的logo名称
+config:
+  systemName : 测试版
