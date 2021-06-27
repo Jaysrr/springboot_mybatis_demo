@@ -49,7 +49,7 @@ public class AccountController {
                 ? JsonResult.ok(AccountConstants.SUCCESS) : JsonResult.error();
     }
 
-
+    //多加这一行注释，为了辨别 是传到master上的
     @GetMapping("/login")
     public String login(Model model) {
 
